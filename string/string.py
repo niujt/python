@@ -27,7 +27,7 @@ else:
     print('shit!!!')
 print('*'*50)
 # 更新字符串   第四位开始换成!
-print(message[:3] +'!')
+print(message[:3] + '!')
 print('*'*50)
 
 

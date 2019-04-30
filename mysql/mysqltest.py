@@ -2,7 +2,7 @@ import pymysql
 
 
 def conn():
-    db = pymysql.connect('localhost','root','123456','mytest')
+    db = pymysql.connect('localhost', 'root', '123456', 'mytest')
     return db
 
 
@@ -44,5 +44,6 @@ def insert(db):
 
 if __name__ == '__main__':
     db = conn()
+    insert(db)
   #  insert(db)
 
