@@ -1,6 +1,5 @@
 import socket
 
-
 # 创建socket对象
 client_send = socket.socket()
 # 确定IP
@@ -16,10 +15,10 @@ while True:
         continue
     elif msg == "exit":
         break
-    client_send.sendall(bytes(host+":"+msg, encoding="utf-8"))
+    client_send.sendall(bytes(host + ":" + msg, encoding="utf-8"))
     # 接受消息
     data = client_send.recv(1024)
-    print(str(data,encoding="utf-8"))
+    print(str(data, encoding="utf-8"))
 
 # 断开链接
 client_send.close()
